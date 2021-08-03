@@ -10,8 +10,8 @@ import numpy as np
 async def bot_echo(message: types.Message):
     diameter = message.text
     area = np.pi * (int(diameter)/2) * (int(diameter)/2)
-    await message.answer(f"The diameter you entered is {diameter}\n"
-                         f"The area is {area}")
+    await message.answer(f"The diameter you entered is {diameter}cm\n"
+                         f"The area is {int(area)}cm^2")
 
 
 # Эхо хендлер, куда летят ВСЕ сообщения с указанным состоянием
